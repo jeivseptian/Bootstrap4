@@ -1,0 +1,52 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background: #ff9900;
+  border: 0;
+  padding: 15px 40px 15px 40px;
+}
+
+.btn-primary:hover {
+  background: rgba(219, 133, 4);
+  border: 0;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #bcd0e5;
+  font-size: 16px;
+  padding: 15px 40px 15px 40px;
+  font-weight: bold;
+  color: #173a56;
+}
+
+.btn-secondary:hover {
+  background: none;
+  border: 1px solid rgba(159, 177, 197);
+  color: #173a56;
+}
+
+.herobwa h1 {
+  font-weight: 700;
+  color: #2f281e;
+}
+
+.herobwa p {
+  font-weight: 400;
+  color: #2f281e;
+}
+
+.navbar-nav .nav-link {
+  color: #2f281e;
+}
+
+/* MEDIA BREAK POINTS */
+@media only screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+}
