@@ -2,7 +2,65 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.btn-primary {
+.span-hero {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 108px;
+
+  color: #095d6a;
+}
+
+.span-hero-2 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 108px;
+
+  color: #fbbc58;
+}
+
+.fa-search {
+  font-size: 26px;
+  color: #fbbc58;
+}
+
+.btn-login {
+  background-color: #095d6a;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #063a42;
+  color: #fff;
+}
+
+.herobwa h1 {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 108px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  color: #095d6a;
+}
+
+.hero-img {
+  float: right;
+  margin-right: -20px;
+}
+
+/* services */
+#services {
+  background-image: url("/images/background-service.png");
+}
+
+/* .btn-primary {
   background: #ff9900;
   border: 0;
   padding: 15px 40px 15px 40px;
@@ -26,27 +84,12 @@ body {
   background: none;
   border: 1px solid rgba(159, 177, 197);
   color: #173a56;
-}
-
-.herobwa h1 {
-  font-weight: 700;
-  color: #2f281e;
-}
-
-.herobwa p {
-  font-weight: 400;
-  color: #2f281e;
-}
-
-.navbar-nav .nav-link {
-  color: #2f281e;
-}
+} */
 
 /* MEDIA BREAK POINTS */
 @media only screen and (max-width: 768px) {
-  .btn-primary,
+  /* .btn-primary,
   .btn-secondary {
     margin-top: 10px;
-    margin-left: 0 !important;
-  }
+    margin-left: 0 !important; */
 }

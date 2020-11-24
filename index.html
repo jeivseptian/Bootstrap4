@@ -10,6 +10,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/1262ca66d3.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,9 +24,9 @@
     />
   </head>
   <body>
+    <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-light py-4">
       <div class="container">
-        <img src="/images/logo.png" alt="" width="187" />
         <button
           class="navbar-toggler"
           type="button"
@@ -35,51 +41,99 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active align-self-center">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item align-self-center">
+              <a class="nav-link" href="#">Dashboard</a>
             </li>
             <li class="nav-item align-self-center">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#">Description</a>
             </li>
             <li class="nav-item align-self-center">
-              <a class="nav-link" href="#">Customers</a>
+              <a class="nav-link" href="#">Service</a>
             </li>
             <li class="nav-item align-self-center">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Profile</a>
             </li>
-            <li class="nav-item align-self-center">
+            <li class="nav-item align-self-center mr-5">
               <a class="nav-link" href="#">Resources</a>
             </li>
-            <a href="#" class="btn btn-secondary px-4 ml-5" role="button"
-              >Sign In</a
-            >
-            <a href="#" class="btn btn-primary px-4 ml-2" role="button"
-              >Sign Up</a
-            >
+            <a href="#" role="button" class="align-self-center ml-5 mr-3"
+              ><i class="fas fa-search"></i
+            ></a>
+            <a href="#" class="btn btn-login px-4 ml-2" role="button">Login</a>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- end navigation -->
 
+    <!-- header -->
     <div class="herobwa mt-5">
       <div class="container">
         <div class="row">
-          <div class="col align-self-center">
-            <h1 class="mb-4">The Design Thinking Superpowers</h1>
-            <p class="mb-4">
-              Tools, tutorials, design and innovation ecperts, all in one place!
-              The most intuitive way to imagine your next user experience.
-            </p>
-            <button type="button" class="btn btn-primary">Get Started</button>
+          <div class="col">
+            <h1 class="mb-4">Creative<span class="span-hero"> Brain</span></h1>
+            <h1 class="mb-4">
+              For Your<span class="span-hero-2"> Business</span>
+            </h1>
           </div>
+        </div>
+        <div class="row">
           <div class="col d-none d-sm-block">
-            <img src="/images/hero-icon.png" alt="" width="600" />
+            <img class="hero-img" src="/images/hero.png" alt="" width="900" />
           </div>
         </div>
       </div>
     </div>
+    <!-- end header -->
+
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col">
+            <img src="/images/hero.png" alt="" width="600" />
+          </div>
+          <div class="col align-self-center">
+            <h1>What is <span class="about-breative"> BREATIVE</span> ?</h1>
+            <p>
+              Breative is a <span>Software Company</span> that was formed on
+              January 1, 2020, And was founded by 7 people. Breative is engaged
+              in application creation and design services.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="/images/wave.png" alt="" width="1500" />
+    </section>
+
+    <!-- services -->
+    <section id="services">
+      <div class="container">
+        <h1 class="text-center mt-5">
+          Our <span class="title-service">Service</span>
+        </h1>
+        <div class="row">
+          <div class="col-md-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto
+            quia, perferendis cupiditate nihil repudiandae voluptatum unde error
+            deserunt molestiae eum sit fugiat nam beatae facere temporibus
+            soluta. Laboriosam, labore.
+          </div>
+          <div class="col-md-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut facere
+            deleniti dolorum, animi quisquam hic? Dolore dolor corrupti
+            provident, commodi vitae doloremque numquam. Labore doloremque quod
+            quasi qui, sunt quibusdam?
+          </div>
+          <div class="col-md-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos
+            dicta quas consectetur iste ex fuga tempora labore dolores doloribus
+            aliquam temporibus, nemo sint ullam at quod deserunt quibusdam
+            blanditiis?
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
