@@ -6,6 +6,10 @@
     <title>Bootstrap Test</title>
 
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/custom.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -89,52 +93,133 @@
     <!-- about -->
     <section id="about">
       <div class="container">
-        <div class="row mt-5">
+        <div class="row">
           <div class="col">
-            <img src="/images/hero.png" alt="" width="600" />
+            <img
+              src="/images/Group 74.svg"
+              class="img-about"
+              alt=""
+              width="500"
+            />
           </div>
           <div class="col align-self-center">
             <h1>What is <span class="about-breative"> BREATIVE</span> ?</h1>
-            <p>
-              Breative is a <span>Software Company</span> that was formed on
-              January 1, 2020, And was founded by 7 people. Breative is engaged
-              in application creation and design services.
+            <p class="text-about">
+              Breative is a
+              <span class="span-about">Software Company</span> that was formed
+              on January 1, 2020, And was founded by 7 people. Breative is
+              engaged in application creation and design services.
             </p>
           </div>
         </div>
       </div>
-      <img src="/images/wave.png" alt="" width="1500" />
+      <img src="/images/wave.png" class="bottom-img" alt="" width="100%" />
     </section>
 
     <!-- services -->
     <section id="services">
       <div class="container">
-        <h1 class="text-center mt-5">
+        <h1 class="text-center header-service mb-5">
           Our <span class="title-service">Service</span>
         </h1>
         <div class="row">
           <div class="col-md-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iusto
-            quia, perferendis cupiditate nihil repudiandae voluptatum unde error
-            deserunt molestiae eum sit fugiat nam beatae facere temporibus
-            soluta. Laboriosam, labore.
+            <div class="card card-service">
+              <div class="card-body text-center">
+                <img src="/images/service-3.svg" class="img-service" alt="" />
+                <h5 class="card-title">Mobile App</h5>
+                <a href="#" class="btn btn-primary btn-service">read more</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut facere
-            deleniti dolorum, animi quisquam hic? Dolore dolor corrupti
-            provident, commodi vitae doloremque numquam. Labore doloremque quod
-            quasi qui, sunt quibusdam?
+            <div class="card card-service">
+              <div class="card-body text-center">
+                <img src="/images/service-3.svg" class="img-service" alt="" />
+                <h5 class="card-title">Website</h5>
+                <a href="#" class="btn btn-primary btn-service">read more</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos
-            dicta quas consectetur iste ex fuga tempora labore dolores doloribus
-            aliquam temporibus, nemo sint ullam at quod deserunt quibusdam
-            blanditiis?
+            <div class="card card-service">
+              <div class="card-body text-center">
+                <img src="/images/service-3.svg" class="img-service" alt="" />
+                <h5 class="card-title">Design</h5>
+                <a href="#" class="btn btn-primary btn-service">read more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="slider-area">
+      <div class="container">
+        <h1 class="text-center header-testi mb-5">
+          Client <span class="span-testi">Testimonial</span>
+        </h1>
+        <div class="carousel carousel-testi">
+          <div class="slider">
+            <section>Content for panel 1</section>
+            <section>Content for panel 2</section>
+            <section>Content for panel 3</section>
+            <section>Content for panel 4</section>
+          </div>
+          <div class="control">
+            <ul>
+              <li class="selected"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+    <script>
+      const left = document.querySelector(".left");
+      const right = document.querySelector(".right");
+
+      const slider = document.querySelector(".slider");
+
+      const indicatorParent = document.querySelector(".control ul");
+      const indicators = document.querySelectorAll(".control li");
+      index = 0;
+
+      indicators.forEach((indicator, i) => {
+        indicator.addEventListener("click", () => {
+          document
+            .querySelector(".control .selected")
+            .classList.remove("selected");
+          indicator.classList.add("selected");
+          slider.style.transform = "translateX(" + i * -25 + "%)";
+          index = i;
+        });
+      });
+
+      left.addEventListener("click", function () {
+        index = index > 0 ? index - 1 : 0;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+
+      right.addEventListener("click", function () {
+        index = index < 4 - 1 ? index + 1 : 3;
+        document
+          .querySelector(".control .selected")
+          .classList.remove("selected");
+        indicatorParent.children[index].classList.add("selected");
+        slider.style.transform = "translateX(" + index * -25 + "%)";
+      });
+    </script>
   </body>
 </html>
